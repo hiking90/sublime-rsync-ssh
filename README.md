@@ -94,46 +94,24 @@ When you initialize your project via `Initialize Settings` the plugin will add t
             // Servers we want to sync to
             "remotes":
             {
-                // Each folder from the project will be added here
-                "my-project-folder":
-                [
-                    {
-                        // You can disable any destination by setting this value to 0
-                        "enabled": 1,
-                        // Stuff we do not want rsync to copy, but just for this destination
-                        "excludes":
-                        [
-                        ],
-                        // ssh options
-                        "remote_host": "my-server.my-domain.tld",
-                        "remote_path": "/home/you/Projects/my-project",
-                        "remote_port": 22,
-                        "remote_user": "you",
-                        // Run commands before and after rsync
-                        "remote_pre_command": "",
-                        "remote_post_command": ""
+                "your@my-server.my-domain.tld":
+                {
+                    // You can disable any destination by setting this value to 0
+                    "enabled": 1,
+                    // Stuff we do not want rsync to copy, but just for this destination
+                    "excludes":
+                    [
+                    ],
+                    // ssh options
+                    "remote_port": 22,
+                    // Run commands before and after rsync
+                    "remote_pre_command": "",
+                    "remote_post_command": ""
+                    "folders": {
+                        "my-project-folder": "/home/you/Projects/my-subfolder-target",
+                        "my-project2-folder/subfolder": "/home/you/Projects/my-subfolder-target"
                     }
-                ],
-                // Syncing a single subfolder is also supported
-                "my-project-folder/subfolder":
-                [
-                    {
-                        // You can disable any destination by setting this value to 0
-                        "enabled": 0,
-                        // Stuff we do not want rsync to copy, but just for this destination
-                        "excludes":
-                        [
-                        ],
-                        // ssh options
-                        "remote_host": "my-server.my-domain.tld",
-                        "remote_path": "/home/you/Projects/my-subfolder-target",
-                        "remote_port": 22,
-                        "remote_user": "you",
-                        // Run commands before and after rsync
-                        "remote_pre_command": "",
-                        "remote_post_command": ""
-                    }
-                ]
+                }
             }
         }
     }
