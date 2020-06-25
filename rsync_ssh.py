@@ -478,8 +478,9 @@ class Rsync(threading.Thread):
 
         # Handle specific path syncs (e.g. save events and specific remote)
         if self.specific_path and os.path.isfile(self.specific_path) and self.specific_path.startswith(self.local_path+"/"):
-            source_path      = self.specific_path
-            destination_path = self.remote_path + self.specific_path.replace(self.local_path, "")
+            dirname          = os.path.dirname(self.specific_path)
+            source_path      = dirname + "/"
+            destination_path = self.remote_path + dirname.replace(self.local_path, "")
         elif self.specific_path and os.path.isdir(self.specific_path) and self.specific_path.startswith(self.local_path+"/"):
             source_path      = self.specific_path + "/"
             destination_path = self.remote_path + self.specific_path.replace(self.local_path, "")
