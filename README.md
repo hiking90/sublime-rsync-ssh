@@ -6,7 +6,7 @@ Keep remote directories in sync with local project folders.
 
 - Rsync works based on folder that is not file-based. The original implementation works on file-based.
 - Specific folders in the project are the target of Rsync. User can config the specific folders.
-- Configuration has been changed. Please see [Example `.sublime-project` file]
+- Configuration has been changed. Please see [Example `.sublime-project` file](#example-sublime-project-file)
 
 ## Description
 
