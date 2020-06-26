@@ -2,6 +2,12 @@
 
 Keep remote directories in sync with local project folders.
 
+## Updated & Modified from the origianl implementation
+
+- Rsync works based on folder that is not file-based. The original implementation works on file-based.
+- Specific folders in the project are the target of Rsync. User can config the specific folders.
+- Configuration has been changed. Please see [Example `.sublime-project` file]
+
 ## Description
 
 This plugin will let you sync your project folders to one or more remote servers using rsync and ssh.
