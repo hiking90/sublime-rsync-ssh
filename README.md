@@ -104,10 +104,6 @@ When you initialize your project via `Initialize Settings` the plugin will add t
                 {
                     // You can disable any destination by setting this value to 0
                     "enabled": 1,
-                    // Stuff we do not want rsync to copy, but just for this destination
-                    "excludes":
-                    [
-                    ],
                     // ssh options
                     "remote_port": 22,
                     // Run commands before and after rsync
