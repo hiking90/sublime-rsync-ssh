@@ -109,7 +109,6 @@ class RsyncSshInitSettingsCommand(sublime_plugin.TextCommand):
                     "remote_post_command": "",
                     "enabled": 1,
                     "options": [],
-                    "excludes": [],
                     "folders": folders
             }
             # Save configuration
