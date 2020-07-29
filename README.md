@@ -2,7 +2,7 @@
 
 Keep remote directories in sync with local project folders.
 
-## Updated & Modified from the origianl implementation
+## Updated & Modified from the original implementation
 
 - Rsync works based on folder that is not file-based. The original implementation works on file-based.
 - Specific folders in the project are the target of Rsync. User can config the specific folders.
