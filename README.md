@@ -108,7 +108,7 @@ When you initialize your project via `Initialize Settings` the plugin will add t
                     "remote_port": 22,
                     // Run commands before and after rsync
                     "remote_pre_command": "",
-                    "remote_post_command": ""
+                    "remote_post_command": "",
                     "folders": {
                         "my-project-folder": "/home/you/Projects/my-subfolder-target",
                         "my-project2-folder/subfolder": "/home/you/Projects/my-subfolder-target"
